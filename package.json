@@ -14,6 +14,14 @@
     "우편번호",
     "우편번호찾기"
   ],
+  "homepage": "https://github.com/trabricks-rn/react-native-daum-postcode#readme",
+  "bugs": {
+    "url": "https://github.com/trabricks-rn/react-native-daum-postcode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trabricks-rn/react-native-daum-postcode.git"
+  },
   "author": "Suhan Moon",
   "license": "MIT",
   "peerDependencies": {
