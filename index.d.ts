@@ -36,13 +36,6 @@ export type oncomplete = {
   postcodeSeq: string;
 };
 
-export type onresize = {
-  width: number;
-  height: number;
-};
-
-export type onclose = "FORCE_CLOSE" | "COMPLETE_CLOSE";
-
 export type themeObj = {
   bgColor?: string;
   searchBgColor?: string;
