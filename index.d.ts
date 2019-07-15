@@ -61,14 +61,6 @@ interface PostCode extends WebViewProps {
    */
   jsOptions?: {
     /**
-     * 우편번호 찾기 팝업 또는 iframe의 고정 넓이를 지정합니다. 기본값은 500이며 iframe으로 띄울 경우 비율(%)로도 입력이 가능합니다. 최소값은 300이며 이보다 작은 값을 넣으면 무시됩니다.
-     */
-    width?: number;
-    /**
-     * 우편번호 찾기 팝업 또는 iframe의 고정 높이를 지정합니다. 기본값은 500이며 iframe으로 띄울 경우 비율(%)로도 입력이 가능합니다. 최소값은 400이며 이보다 작은 값을 넣으면 무시됩니다.
-     */
-    height?: number;
-    /**
      * 우편번호 찾기 화면에서 애니메이션 효과를 줍니다. 기본값은 false로 설정되어 있습니다.
      */
     animation?: boolean;
