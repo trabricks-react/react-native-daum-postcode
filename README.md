@@ -43,7 +43,7 @@ https://spi.maps.daum.net/postcode/guidessl#attributes
 
 ---
 
-### `onSelected?: object`
+### `onSelected: (data:Object) => void`
 
 다음우편번호찾기 결과 JSON을 그대로 보내줍니다.
 
@@ -53,13 +53,13 @@ oncomplete 값을 그대로 전달받습니다.
 
 ## 남은 이야기
 
-만드시다가 궁금점, 이상한점 있는경우 깃허브 이슈 혹은 카카오톡 React & React-Native방에 질문 남겨주시면 됩니다.
+만드시다가 궁금한 점, 이상한 점이 있는 경우 깃허브 이슈 혹은 카카오톡 React & React-Native 오픈채팅방에 질문 남겨주시면 됩니다.
 
 ---
 
 ## 외주 문의
 
-혹 RN으로 개발하시다가 어렵고 외주를 맞기시려면
+혹 RN으로 개발하시다가 어렵고 외주를 맡기시려면
 아래 연락처로 연락주시면 친절하게 안내해드리겠습니다.
 
 https://creamcookie.cc / project@creamcookie.cc
