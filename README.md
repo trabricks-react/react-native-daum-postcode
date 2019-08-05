@@ -1,6 +1,14 @@
 
 # react-native-daum-postcode
 
+![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat-square&colorB=191A17)
+[![npm](https://img.shields.io/npm/v/react-native-daum-postcode.svg?style=flat-square)](https://www.npmjs.com/package/react-native-daum-postcode)
+[![npm](https://img.shields.io/npm/dm/react-native-daum-postcode.svg?style=flat-square&colorB=007ec6)](https://www.npmjs.com/package/react-native-daum-postcode)
+[![github issues](https://img.shields.io/github/issues/trabricks/react-native-daum-postcode.svg?style=flat-square)](https://github.com/trabricks/react-native-daum-postcode/issues)
+[![github closed issues](https://img.shields.io/github/issues-closed/trabricks/react-native-daum-postcode.svg?style=flat-square&colorB=44cc11)](https://github.com/trabricks/react-native-daum-postcode/issues?q=is%3Aissue+is%3Aclosed)
+[![Issue Stats](https://img.shields.io/issuestats/i/github/trabricks/react-native-daum-postcode.svg?style=flat-square&colorB=44cc11)](http://github.com/trabricks/react-native-daum-postcode/issues)
+
+
 다음 우편번호 검색을 React-Native에서 쉽게 사용할 수 있도록 만든 플러그인입니다.
 
 상세 설정은 https://spi.maps.daum.net/postcode/guidessl 를 참고하세요
