@@ -48,7 +48,7 @@ export type themeObj = {
   outlineColor?: string;
 };
 
-interface PostCode extends WebViewProps {
+interface Postcode extends WebViewProps {
   /**
    * 다음 우편번호 찾기 서비스의 옵션을 설정할 수 있습니다.
    */
@@ -116,4 +116,4 @@ interface PostCode extends WebViewProps {
   onSelected: (data: oncomplete) => void;
 }
 
-export default PostCode;
+export default Postcode;
