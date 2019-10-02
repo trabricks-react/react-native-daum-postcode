@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import WebView from 'react-native-webview';
 
@@ -46,28 +46,28 @@ const html = `
 
 
 const Postcode = (props) => {
-	const { jsOptions, onSelected, ...otherProps } = props;
-	const injectedJavaScript = `initOnReady(${JSON.stringify(jsOptions)});void(0);`;
+    const {jsOptions, onSelected, onError, ...otherProps} = props;
+    const injectedJavaScript = React.useMemo(() => `initOnReady(${JSON.stringify(jsOptions)});void(0);`, [jsOptions]);
 
-	const onMessage = ({nativeEvent}) => {
-		try {
-			nativeEvent.data && onSelected && onSelected(JSON.parse(nativeEvent.data));
-		}
-		catch (e) {
-		}
-	}
+    const onMessage = React.useCallback(({nativeEvent}) => {
+        try {
+            nativeEvent.data && onSelected && onSelected(JSON.parse(nativeEvent.data));
+        } catch (e) {
+			onError(e);
+        }
+    }, [onSelected]);
 
-	return (
-		<WebView
-			{...otherProps}
-			source={{ html, baseUrl: 'https://github.com' }}
-			onMessage={onMessage}
-			injectedJavaScript={injectedJavaScript}
-			mixedContentMode={"compatibility"}
-			useWebKit={true}
-			onShouldStartLoadWithRequest={() => true}
-		/>
-	);
+    return (
+        <WebView
+            {...otherProps}
+            source={{html, baseUrl: 'https://github.com'}}
+            onMessage={onMessage}
+            injectedJavaScript={injectedJavaScript}
+            mixedContentMode={"compatibility"}
+            useWebKit={true}
+            onShouldStartLoadWithRequest={() => true}
+        />
+    );
 
 };
 
