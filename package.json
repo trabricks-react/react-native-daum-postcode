@@ -26,5 +26,5 @@
   "peerDependencies": {
     "react-native": "*",
     "react-native-webview": "*"
-  },
+  }
 }
