@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { WebViewProps } from 'react-native-webview';
 
 declare module 'react-native-daum-postcode' {
@@ -121,6 +122,6 @@ declare module 'react-native-daum-postcode' {
 		onError: (error: any) => void;
 	}
 
-	export default Postcode;
+	export default class Postcode extends React.Component<Postcode>{}
 }
 
