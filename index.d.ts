@@ -50,7 +50,7 @@ declare module 'react-native-daum-postcode' {
 		outlineColor?: string;
 	};
 
-	interface Postcode extends WebViewProps {
+	interface PostcodeProps extends WebViewProps {
 		/**
 		 * 다음 우편번호 찾기 서비스의 옵션을 설정할 수 있습니다.
 		 */
@@ -122,6 +122,6 @@ declare module 'react-native-daum-postcode' {
 		onError: (error: any) => void;
 	}
 
-	export default class Postcode extends React.Component<Postcode>{}
+	export default class Postcode extends React.Component<PostcodeProps>{}
 }
 
