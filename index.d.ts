@@ -3,7 +3,7 @@ import { WebViewProps } from 'react-native-webview';
 
 declare module 'react-native-daum-postcode' {
 	export type oncomplete = {
-		zoomcode: number;
+		zonecode: number;
 		address: string;
 		addressEnglish: string;
 		addressType: 'R' | 'J';
