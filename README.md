@@ -57,7 +57,7 @@ https://spi.maps.daum.net/postcode/guidessl#attributes
 
 ---
 
-### `onSelected: (data:Object) => void`
+### `onSelected: (data: OnCompleteParams) => void`
 
 다음우편번호찾기 결과 JSON을 그대로 보내줍니다.
 
