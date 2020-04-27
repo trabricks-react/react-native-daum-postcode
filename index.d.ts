@@ -1,7 +1,7 @@
 declare module 'react-native-daum-postcode' {
   import * as React from 'react';
   import { WebViewProps } from 'react-native-webview';
-  export type oncomplete = {
+  export interface OnCompleteParams {
     zonecode: number;
     address: string;
     addressEnglish: string;
@@ -114,7 +114,7 @@ declare module 'react-native-daum-postcode' {
      * 우편번호 검색 결과 목록에서 특정 항목을 클릭한 경우, 해당 정보를 받아서 처리할 콜백 함수를 정의하는 부분입니다.(null값 또는 정의하지 않을 시에 검색은 가능하지만, 결과 항목을 클릭하면 아무 일도 일어나지 않습니다.)
      * 이 함수를 정의할때 넣는 인자에는 우편번호 검색 결과 목록에서 사용자가 클릭한 주소 정보가 들어가게 됩니다.
      */
-    onSelected: (data: oncomplete) => void;
+    onSelected: (data: OnCompleteParams) => void;
     /**
      * onSelected 함수에서 오류 발생 시 실행되는 함수입니다.
      */
