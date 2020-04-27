@@ -37,7 +37,7 @@ declare module 'react-native-daum-postcode' {
     postcodeSeq: string;
   };
 
-  export type themeObj = {
+  export interface themeObj {
     bgColor?: string;
     searchBgColor?: string;
     contentBgColor?: string;
@@ -48,12 +48,8 @@ declare module 'react-native-daum-postcode' {
     emphTextColor?: string;
     outlineColor?: string;
   };
-
-  interface PostcodeProps extends WebViewProps {
-    /**
-     * 다음 우편번호 찾기 서비스의 옵션을 설정할 수 있습니다.
-     */
-    jsOptions?: {
+  
+  export interface JSOptions {
       /**
        * 우편번호 찾기 화면에서 애니메이션 효과를 줍니다. 기본값은 false로 설정되어 있습니다.
        */
@@ -109,7 +105,13 @@ declare module 'react-native-daum-postcode' {
        * 우편번호 찾기 화면의 색상 테마를 변경할 수 있습니다. 기본값은 null입니다.
        */
       theme?: themeObj;
-    };
+    }
+
+  export interface PostcodeProps extends WebViewProps {
+    /**
+     * 다음 우편번호 찾기 서비스의 옵션을 설정할 수 있습니다.
+     */
+    jsOptions?: JSOptions;
     /**
      * 우편번호 검색 결과 목록에서 특정 항목을 클릭한 경우, 해당 정보를 받아서 처리할 콜백 함수를 정의하는 부분입니다.(null값 또는 정의하지 않을 시에 검색은 가능하지만, 결과 항목을 클릭하면 아무 일도 일어나지 않습니다.)
      * 이 함수를 정의할때 넣는 인자에는 우편번호 검색 결과 목록에서 사용자가 클릭한 주소 정보가 들어가게 됩니다.
@@ -118,7 +120,7 @@ declare module 'react-native-daum-postcode' {
     /**
      * onSelected 함수에서 오류 발생 시 실행되는 함수입니다.
      */
-    onError: (error: any) => void;
+    onError: (error: unknown) => void;
   }
 
   declare const Postcode: React.FC<PostcodeProps>;
