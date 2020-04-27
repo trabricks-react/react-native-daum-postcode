@@ -17,7 +17,12 @@
 ## 사용법
 
 ```bash
-npm install react-native-daum-postcode
+npm install react-native-daum-postcode react-native-webview
+```
+
+## ios
+```bash
+cd ios && pod install && cd ..
 ```
 
 ```jsx
