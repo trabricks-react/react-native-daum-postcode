@@ -25,6 +25,7 @@ npm install react-native-daum-postcode react-native-webview
 cd ios && pod install && cd ..
 ```
 
+## Usage
 ```jsx
 import Postcode from 'react-native-daum-postcode';
 
