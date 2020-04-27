@@ -37,7 +37,7 @@ declare module 'react-native-daum-postcode' {
     postcodeSeq: string;
   };
 
-  export interface themeObj {
+  export interface PostcodeTheme {
     bgColor?: string;
     searchBgColor?: string;
     contentBgColor?: string;
@@ -104,7 +104,7 @@ declare module 'react-native-daum-postcode' {
       /**
        * 우편번호 찾기 화면의 색상 테마를 변경할 수 있습니다. 기본값은 null입니다.
        */
-      theme?: themeObj;
+      theme?: PostcodeTheme;
     }
 
   export interface PostcodeProps extends WebViewProps {
