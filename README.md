@@ -76,7 +76,7 @@ oncomplete 값을 그대로 전달받습니다.
 혹 RN으로 개발하시다가 어렵고 외주를 맡기시려면
 아래 연락처로 연락주시면 친절하게 안내해드리겠습니다.
 
-https://creamcookie.cc / project@creamcookie.cc
+https://trabricks.io / leader@trabricks.io
 
 
  
