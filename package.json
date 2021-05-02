@@ -1,6 +1,6 @@
 {
   "name": "react-native-daum-postcode",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "우편번호 검색 플러그인 (http://postcode.map.daum.net)",
   "main": "index.js",
   "scripts": {
